@@ -8,6 +8,6 @@ do
    do
       #O comando abaixo será executado 5 vezes
       #A pasta das instâncias está certa?
-      ./tcc instancias/$INST 423
+      ./tcc instancias/$INST 423 >> saida.csv
    done
 done
