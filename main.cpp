@@ -52,7 +52,7 @@ double simulated(Instancia* inst, Solucao* sol){
 				} 
 			}
 		}
-		t=t*0.99;
+		t=t*0.98;
 		//printf(" %f %f %f %f \n", best.cost, sol->cost, t, crono.getTime());		
 
 		if(t < 0.001)
