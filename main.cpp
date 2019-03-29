@@ -18,7 +18,7 @@ int tempo =  300;
 double simulated(Instancia* inst, Solucao* sol){
 	Crono crono;
 	Solucao best = *sol;
-	double t =1000;
+	double t =100;
 	double bestCost = sol->cost;
 
 	crono.run();
