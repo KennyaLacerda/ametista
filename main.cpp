@@ -11,7 +11,7 @@
 #include "solucao.h"
 #include "Crono.h"
 
-#define INTERACAO 10000
+#define INTERACAO 12000
 int tempo =  300;
 
 
@@ -52,7 +52,7 @@ double simulated(Instancia* inst, Solucao* sol){
 				} 
 			}
 		}
-		t=t*0.99;
+		t=t*0.992;
 		//printf(" %f %f %f %f \n", best.cost, sol->cost, t, crono.getTime());		
 
 		if(t < 0.001)
@@ -61,7 +61,7 @@ double simulated(Instancia* inst, Solucao* sol){
 		if(crono.getTime() > tempo)
 			break; 
 	}
-	printf("%f,%f,%f,%f,", best.cost, sol->cost, t, crono.getTime());		
+	printf("%f,%f,%f,%f\n", best.cost, sol->cost, t, crono.getTime());		
 		
 	*sol = best;
     return 0;
